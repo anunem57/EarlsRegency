@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Earl's Regency Hotel</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="EarlStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link href="responsive.css" rel="stylesheet" media="screen and (max-width: 1024px)"/>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="https://www.aitkenspencehotels.com/earlsregency/" id="logo"><img src="logo.png" alt="Earl's Regency Logo"></a>
+        <nav class="navbar">
+
+            <a href="index.html"><div id="button">Home</div></a>
+            <a href="accommodation.html"><div id="button">Accommodation</div></a>
+            <a href="Dining.html"><div id="button">Dining</div></a>
+            <a href="Activities.html"><div id="button">Activities</div></a>
+            <a href="Hotels.html"><div id="button">Hotels</div></a>
+            <a href="Offers.html"><div id="button">offers</div></a>
+            <a href="Gallery.html"><div id="button">Gallery</div></a>
+            <a href="Booking.html"><div id="button">Booking</div></a>
+        </nav>
+    </header>
+
+<div class="slider">
+    <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="slide first">
+            <img src="1.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="20.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="19.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="17.jpg" alt="">
+        </div>
+
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+
+    </div>
+
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if (counter > 4){
+            counter = 1;
+        }
+    }, 5000);
+</script>
+
+<!--Availability
+
+<section class = "availability" id = "availability">
+    <form action="" method="post">
+        <section class="flex">
+            <section class="box">
+                <p>Check In <span>*</span></p>
+                <input type="date" name="check_in" class="input" required>
+            </section>
+            <section class="box">
+                <p>Check Out <span>*</span></p>
+                <input type="date" name="check_out" class="input" required>
+            </section>
+            <section class="box">
+                <p>Adults <span>*</span></p>
+                <select name="adults" class="input" required>
+                    <option value="1">1 adult</option>
+                    <option value="1">2 adults</option>
+                    <option value="1">3 adults</option>
+                    <option value="1">4 adults</option>
+                    <option value="1">5 adults</option>
+                    <option value="1">6 adults</option>
+                    <option value="1">7 adults</option>
+                    <option value="1">8 adults</option>
+                </select>
+            </section>
+            <section class="box">
+                <p>Childs <span>*</span></p>
+                <select name="childs" class="input" required>
+                    <option value="-">0 Child</option>
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Childs</option>
+                    <option value="3">3 Childs</option>
+                    <option value="4">4 Childs</option>
+                    <option value="5">5 Childs</option>
+                    <option value="6">6 Childs</option>
+                </select>
+            </section>
+            <section class="box">
+                <p>Rooms <span>*</span></p>
+                <select name="rooms" class="input" required>
+                    <option value="1">1 Room</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                    <option value="4">4 Rooms</option>
+                    <option value="5">5 Rooms</option>
+                    <option value="6">6 Rooms</option>
+                </select>
+            </section>
+        </section>
+        <input type="submit" value="Book Now" name="Book_now" class="BookNowBtn">
+    </form>
+</section>!-->
+
+<br><br>
+<div class="description">
+    <h1>Earl's Regency, Luxury Hotel in Kandy</h1><br>
+    <center><p>Ayubowan! Traditional greetings and a warm welcome to Earl's Regency Hotel, where a new and<br>different luxury boutique hotel experience awaits guests in the cool climes of the Hill Country of Sri Lanka.<br><br>
+    Live like royalty at the Earl's Regency - a premier five star gateway among luxury hotels Sri Lanka, located in the<br>heart of the island's culture capital, Kandy. Surrounded by the history and tradition of the kings before us, we at<br>Earl's Regency, a leading hospitality provider among all Kandy hotels and reputed Kandy luxury hotels, provide a luxury<br>base for you to venture out and explore from. So pack your bags your highness, your carriage awaits<br>to take you to a different time, a different place, a different era...</p></center>
+</div><br>
+<center><a href="https://www.aitkenspencehotels.com/earlsregency/" class="Discover-btn">DISCOVER MORE</a></center><br>
+
+<section class="about top" id="about">
+    <section class="container-flex">
+        <section class="left">
+            <section class="img">
+                <img src="21.png" alt="" class="bedroom">
+            </section>
+        </section>
+        <section class="right">
+            <section class="heading">
+                <h5>RAISING COMFORT TO THE HIGHEST LEVEL</h5>
+                <h3>Accommodation</h3>
+                <p>Adore your accommodation in Kandy with your very own view of flowing river, lush hills, and looming mountains. Each of our rooms extend out to a balcony with a stunning vista of your surroundings Spacious and stylish, the 116 rooms at the Earl’s Regency are uniquely designed to portray the city of Kandy – from the wooden floors to the furniture – each piece displays the local influence which was created in giving you the most unique holiday experience among Sri Lanka’s luxury resorts.</p>
+                    <ul type="square" class="list">
+                        <li a href="#">Deluxe Room</li>
+                        <li a href="#">Luxury Room</li>
+                        <li a href="#">Family Room</li>
+                        <li a href="#">Junior Suite</li>
+                        <li a href="#">Luxury Suite</li>
+                        <li a href="#">Mountbatten Suite</li>
+                    </ul>
+                <a href="accommodation.html" class="btn1">Read More</a>
+            </section>
+        </section>
+    </section>
+</section>
+
+<section class="about top" id="about">
+    <section class="container-flex">
+        <section class="left1">
+            <section class="heading">
+                <h5>RAISING COMFORT TO THE HIGHEST LEVEL</h5>
+                <h3>Hotels</h3>
+                <p>Welcome to a collection of unique lodgings that have been compared to the best in the world. At Earl's Regency Hotel, savour the graciousness of authentic Sri Lankan hospitality while enjoying thoughtful amenities and priceless extravagances. Discover #HappinessMoments at Earl's Hotels in Sri Lanka and create memories that will undoubtedly make you want to return.</p>
+                <ol type="I.  " class="list1">
+                    <li a href="Hotels.html">Earl's Regent Kandy</li>
+                    <li a href="Hotels.html">Earl's Regent Negombo</li>
+                </ol>
+                <a href="" class="btn1">Read More</a>
+            </section>
+        </section>
+        <section class="right1">
+            <section class="img">
+                <img src="22.jpg" alt="" class="hotel1">
+            </section>
+        </section>
+    </section>
+</section><br><br><br>
+
+<div class="card-container">
+    <div class="card">
+        <img src="18.png">
+        <div class="card-content">
+            <center><h1>Activities</h1></center>
+            <p>We offer a variety of leisure activities from sports and excursions to our luxurious Renaissance Spa...</p>
+            <center><a href="Activities.html" class="card-button">Read More</a></center>
+        </div>
+    </div>
+    <div class="card">
+        <img src="14.jpeg">
+        <div class="card-content">
+            <center><h1>Facilities</h1></center>
+            <p>We offer variety of amenities to make your stay as comfortable as possible, including free Wi-Fi, swimming pool, spa, gym, etc...</p>
+            <center><a href="Facilities.html" class="card-button">Read More</a></center>
+        </div>
+    </div>
+    <div class="card">
+        <img src="4.jpg">
+        <div class="card-content">
+            <center><h1>Dining</h1></center>
+            <p>We commited to provide our guests with a great dining experience that is both memorable and enjoyable.</p>
+            <center><a href="Dining.html" class="card-button">Read More</a></center>
+        </div>
+    </div>
+</div><br><br><br>
+<footer>
+    <section class="container">
+        <section class="sec aboutus">
+            <h2>About Us</h2>
+            <p><strong>Earl's Regency </strong>Hotel is a 5-star hotel located in Kandy, Sri Lanka. It is a luxurious hotel that offers spacious rooms, a spa, an outdoor pool, and a variety of dining options. The hotel is also home to a number of meeting and event spaces.</p>
+
+            <ul class="sci">
+                <li><a href="https://web.facebook.com/earlsregencyk"><img src="facebook.png"></i></a></li>
+                <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjGxKXrnqGBAxVowjgGHe8cA50QFnoECBEQAQ&url=https%3A%2F%2Fwww.instagram.com%2Fearls.regency%2F&usg=AOvVaw0_ElgFTNNDsxToiG3fKb_j&opi=89978449"><img src="ig.png"></i></a></li>
+                <li><a href="https://www.youtube.com/@user-kd8bh7ne8p"><img src="you.png"></i></a></li>
+            </ul>
+        </section>
+        <section class="sec quickLinks">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="https://www.aitkenspencehotels.com/earlsregency/">About</a></li>
+                <li><a href="https://www.aitkenspencehotels.com/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.aitkenspencehotels.com/earlsregency/sitemap.html">Help</a></li>
+                <li><a href="https://www.aitkenspencehotels.com/terms-of-use.html">Terms & Conditions</a></li>
+                <li><a href="https://www.aitkenspencehotels.com/earlsregency/contact-us.html">Contact</a></li>
+            </ul>
+        </section>
+        <section class="see contact">
+            <h2>Contact Info</h2>
+            <ul class="info">
+                <li>
+                    <span><img src="map.png"></i></span>
+                    <span>Earl's Regency Hotel,<br>
+                    Kundasale, Kandy,<br>
+                    Sri Lanka</span>
+                </li>
+                <li>
+                    <span><img src="call.png"></i></span>
+                    <p><a href="+94 75 6335870">+94 81 2422122</a></p>
+                </li>
+                <li>
+                    <span><img src="mail.png"></i></span>
+                    <p><a href="nemsith13@gmail.com">erinfo@aitkenspence.lk</a></p>
+                </li>
+            </ul>
+        </section>
+    </section>
+</footer>
+<section class="copyrightText">
+    <p>Copyright © 2023 Earl's Regency. All Rights Reserved.</p>
+</section>
+</body>
+</html>
+
+
+
+
+

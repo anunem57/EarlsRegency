@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title></title>
+        <script type="text/JavaScript">
+            function abc() {
+
+            var q = prompt("What do you want to display?");
+            var q1 = prompt("How many times needs to display");
+            var x = 0 ;
+
+            while (x<q1){
+                document.write (q + "<br>");
+                x ++;
+            }
+        }
+            function abcd() {
+            
+            document.write ("<h1>Welcome To APIIT</h1>");
+
+            }
+
+            function abcde() {
+            document.write ()
+            }
+
+            function abc1() {
+                document.write("<img src='61.jpg'>")
+            }
+
+            function ab() {
+            
+
+            var Name = document.getElementById('na').value;
+            document.write("<h1>Welcome To APIIT</h1>");
+            document.write ("Name : ", Name);
+
+            }
+
+            function ab2() {
+            
+
+            var Basic1 = (document.getElementById('na').value);
+            if (Basic1=="")
+                {
+                    document.write("Invalid info");
+                    return;
+                }
+            var Basic = parseInt(Basic1);
+            var Over = parseInt(document.getElementById('no').value);
+            var tot = Basic + Over;
+            var tran = parseInt(document.getElementById('tr').value);
+            var uni = parseInt(document.getElementById('unif').value)
+            var epf = tot * 5 /100;
+            var totd = tran + uni + epf;
+            var fs = tot - totd;
+
+            document.write ("Basic Salary : " + Basic +"<br>");
+            document.write ("Over Time : " + Over + "<br>");
+            document.write ("Total Income : " + tot + "<br>");
+            document.write ("Transport : " + tran + "<br>");
+            document.write ("Uniform : " + uni + "<br>");
+            document.write ("EPF : " + epf + "<br>");
+            document.write ("Total Deduction : " + totd + "<br>");
+            document.write ("Total Salary : " + fs + "<br>");
+
+            }
+
+        </script>
+        <body>
+            <img src="61.jpg" width="200" onclick="abc()">
+            <img src="49.jpg" width="200" onmouseover="abcd()">
+            <a href='https://www.aitkenspencehotels.com'><img src="logo.jpg" width="200" onclick="abcde()"></a><br><br>
+            <button onmouseover="abc1()">Submit</button><br><br>
+
+            <foam>
+                Basic Salary : <input type="text" id="na"><br><br>
+                Over Time : <input type="text" id="no"><br><br>
+                Transport : <input type="text" id="tr"><br><br>
+                Uniform : <input type="text" id="unif"><br><br>
+                EPF : 5% <br><br>
+                <button onclick="ab2()">Calculation</button>
+                <button onclick="ab2()">Cancel</button>
+            </foam>
+
+        </body>
+    </head>
+</html>
