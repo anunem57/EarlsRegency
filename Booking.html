@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Earl's Regency Hotel</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="EarlStyle.css">
+    </head>
+    <body>
+        <header class="header">
+            <a href="https://www.aitkenspencehotels.com/earlsregency/" id="logo"><img src="logo.png" alt="Earl's Regency Logo"></a>
+            <nav class="navbar">
+    
+                <a href="index.html"><div id="button">Home</div></a>
+                <a href="accommodation.html"><div id="button">Accommodation</div></a>
+                <a href="Dining.html"><div id="button">Dining</div></a>
+                <a href="Activities.html"><div id="button">Activities</div></a>
+                <a href="Hotels.html"><div id="button">Hotels</div></a>
+                <a href="Offers.html"><div id="button">offers</div></a>
+                <a href="Gallery.html"><div id="button">Gallery</div></a>
+                <a href="Booking.html"><div id="button">Booking</div></a>
+            </nav>
+        </header> 
+
+        <div class="slider2">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+        
+                <div class="slide first">
+                    <img src="19.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="20.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="17.jpg" alt="">
+                </div>
+        
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+        
+            </div>
+        
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+<!--Booking Form-->
+    <section class="booking-container">
+    <section class="room-booking-form">
+        <form action="" id="booking_form">
+            <section class="form-heading">Room Bookings</section><br>
+            <section class="detail-input">
+                <section class="user-input-fields">
+                    <label for="name">First Name</label>
+                    <input type="text" name="name" id="firstName" placeholder="Enter your First Name." required>
+                </section> 
+                <section class="user-input-fields">
+                    <label for="name">Last Name</label>
+                    <input type="text" name="name" id="lastName" placeholder="Enter your Last Name." required>
+                </section> 
+            </section>
+            <section class="detail-input">
+                <section class="user-input-fields">
+                    <label for="contact">Contact Number</label>
+                    <input type="tel" name="contact" id="contact"  maxlength="11" title="Enter a valid telephone Number"  placeholder="(0XX) XXX XXXX" />
+                </section>
+                <section class="user-input-fields">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                </section>
+            </section>
+
+            <section class="detail-input">
+                <section class="user-input-fields">
+                    <label for="checkin">Check In</label>
+                    <input type="date" name="checkings" id="checkin" required>
+                </section>
+                <section class="user-input-fields">
+                    <label for="checkout">Check Out</label>
+                    <input type="date" name="checkings" id="checkout" required>
+                </section>
+            </section>
+
+            <section class="room-detail-input">
+                <section class="user-input-fields">
+                    <label for="single">Number Of Single Rooms Required</label>
+                    <input type="number" name="rooms" id="single" min="0" value="0" placeholder="Enter Number of Rooms">
+                </section>
+
+                <section class="user-input-fields">
+                    <label for="double">Number Of Double Rooms Required</label>
+                    <input type="number" name="rooms" id="double" min="0" value="0" placeholder="Enter Number of Rooms">
+                </section>
+
+                <section class="user-input-fields">
+                    <label for="triple">Number Of Triple Rooms Required</label>
+                    <input type="number" name="rooms" id="triple" min="0" value="0" placeholder="Enter Number of Rooms">
+                </section>
+            </section>
+
+            <section class="detail-input">
+                <section class="user-input-fields">
+                    <label for="beds">Extra Beds <span>(If Required)</span></label>
+                    <input type="number" name="beds" id="beds" max="3" min="0" value="0" placeholder="Enter Number of Beds">
+                </section>
+                <section class="user-input-fields">
+                    <label for="kids">Kids Above Age 5</label>
+                    <input type="number" name="kids" id="kids" value="0" placeholder="Enter Number of Kids">
+                </section>
+            </section><br>
+
+            <h2>Extra Requirements <span>(If Required)</span></h2>
+            <section class="extra-requirements">
+                <section class="extra-requirements-checkboxes">
+                    <input type="checkbox" name="extra" id="wifi">
+                    <section class="extra-req-text">
+                        <span>
+                            WiFi
+                        </span>
+                    </section>
+                </section>
+
+                <section class="extra-requirements-checkboxes">
+                    <input type="checkbox" name="extra" id="pool">
+                    <section class="extra-req-text">
+                        <span>
+                            Pool View
+                        </span>
+                    </section>
+
+                </section>
+
+                <section class="extra-requirements-checkboxes">
+                    <input type="checkbox" name="extra" id="garden">
+                    <section class="extra-req-text">
+                        <span>
+                            Garden View
+                        </span>
+                    </section>
+
+                </section>
+
+                <section class="extra-requirements-checkboxes">
+                    <input type="checkbox" name="extra" id="ac">
+                    <section class="extra-req-text">
+                        <span>
+                            A/C
+                        </span>
+                    </section>
+                </section>
+
+                <section class="extra-requirements-checkboxes">
+                    <input type="checkbox" name="extra" id="nac">
+                    <section class="extra-req-text">
+                        <span>
+                            Non A/C
+                        </span>
+                    </section>
+
+                </section>   
+            </section>
+
+            <section class="promo-code">
+                <label for="Promo">Promo Code  :
+                <input type="text" name="promo" id="promo" placeholder="Enter Promo Code"></label>
+            </section><br>
+
+            <section id="currentBooking"></section>
+
+
+            <section class="book-room-button">
+                <button type="submit" id="bookrooms">BOOK NOW</button>
+            </section><br><br>
+
+            <!--Table to display the records-->
+            <table id="bookingoutput" border="1"></table>
+
+
+        <hr><br><br>
+
+        <!-- Adventure Form -->
+        <form action="" id="adventure-form">
+            <section class="form-heading">Adventure Bookings</section><br>
+
+            <section class="local-foreign">
+            <section class="user-input-fields">
+                <label for="country">Local / Foreign [Adults]<span> (Required)</span></label>
+                <select name="country" id="countryadult" >
+                    <option value="default">-</option>
+                    <option value="localadult">Diving for Local Adults</option>
+                    <option value="foreignadult">Diving for Foreign Adults</option>
+                </select>
+                <label for="country">Local / Foreign [Kids]<span> (Required)</span></label>
+                <select name="country1" id="countrykid" >
+                    <option value="default">-</option>
+                    <option value="localkid">Diving for Local Kids</option>
+                    <option value="foreignkid">Diving for Foreign Kids</option>
+                </select>
+            </section>
+            </section>
+
+            <section class="duration">
+                    <label for="hours">Duration <span>(Hours)</span></label>
+                    <input type="number" name="hours" id="TmeHours" value="0" placeholder="Enter Duration">
+            </section>
+
+            <h2>Guide Requirement <span>(If Required)</span></h2>
+            <section class="guide-requirements">
+                <section class="guide-requirements-checkboxes">
+                    <input type="checkbox" name="guide" id="adult">
+                    <section class="guide-req-text">
+                        <span>
+                            Adult Guide
+                        </span>
+                    </section>
+                </section>
+
+                <section class="guide-requirements-checkboxes">
+                    <input type="checkbox" name="guide" id="kidguide">
+                    <section class="guide-req-text">
+                        <span>
+                            Kid's Guide
+                        </span>
+                    </section>
+                </section>
+            </section>
+
+            <section class="book-room-button">
+                <button type="submit" id="bookAdventure" onclick="bookAdventure">BOOK ADVENTURE</button>
+            </section><br><br>
+        </form>
+
+        <!--Overall Booking-->
+        <table id="overallbookingoutput" border="1"></table>
+
+        
+
+        <section class="favourite-loyalty-button">
+            <button type="button" id="addToFavorites" onclick="addToFavorites">ADD TO FAVOURITES</button>
+            <button type="button" id="loyalty" onclick="checkLoyalty">LOYALTY</button>
+        </section>
+    </section>
+    </section>
+
+    <footer7>
+        <section class="container">
+            <section class="sec aboutus">
+                <h2>About Us</h2>
+                <p><strong>Earl's Regency </strong>Hotel is a 5-star hotel located in Kandy, Sri Lanka. It is a luxurious hotel that offers spacious rooms, a spa, an outdoor pool, and a variety of dining options. The hotel is also home to a number of meeting and event spaces.</p>
+    
+                <ul class="sci">
+                    <li><a href="https://web.facebook.com/earlsregencyk"><img src="facebook.png"></i></a></li>
+                    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjGxKXrnqGBAxVowjgGHe8cA50QFnoECBEQAQ&url=https%3A%2F%2Fwww.instagram.com%2Fearls.regency%2F&usg=AOvVaw0_ElgFTNNDsxToiG3fKb_j&opi=89978449"><img src="ig.png"></i></a></li>
+                    <li><a href="https://www.youtube.com/@user-kd8bh7ne8p"><img src="you.png"></i></a></li>
+                </ul>
+            </section>
+            <section class="sec quickLinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="https://www.aitkenspencehotels.com/earlsregency/">About</a></li>
+                    <li><a href="https://www.aitkenspencehotels.com/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="https://www.aitkenspencehotels.com/earlsregency/sitemap.html">Help</a></li>
+                    <li><a href="https://www.aitkenspencehotels.com/terms-of-use.html">Terms & Conditions</a></li>
+                    <li><a href="https://www.aitkenspencehotels.com/earlsregency/contact-us.html">Contact</a></li>
+                </ul>
+            </section>
+            <section class="see contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><img src="map.png"></i></span>
+                        <span>Earl's Regency Hotel,<br>
+                        Kundasale, Kandy,<br>
+                        Sri Lanka</span>
+                    </li>
+                    <li>
+                        <span><img src="call.png"></i></span>
+                        <p><a href="+94 75 6335870">+94 81 2422122</a></p>
+                    </li>
+                    <li>
+                        <span><img src="mail.png"></i></span>
+                        <p><a href="nemsith13@gmail.com">erinfo@aitkenspence.lk</a></p>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </footer2>
+    <section class="copyrightText">
+        <p>Copyright © 2023 Earl's Regency. All Rights Reserved.</p>
+    </section>
+    <script src="Earl.js"></script>
+    </body>
+</html>
